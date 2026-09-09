@@ -1,0 +1,125 @@
+/* Impressão / "Salvar como PDF": relatórios em A4, sem menu, com cabeçalho e rodapé próprios. */
+@media print {
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+  @page relatorio {
+    size: A4 landscape;
+    margin: 12mm;
+  }
+  .impressao-relatorio { page: relatorio; }
+  .impressao-relatorio .tabela { font-size: 8pt; }
+  .impressao-relatorio .tabela th { white-space: normal; }
+  .tabela-rolagem { overflow: visible !important; max-height: none !important; }
+  html,
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 10.5pt;
+  }
+  .shell {
+    display: block;
+  }
+  .menu,
+  .nao-imprimir,
+  .toasts,
+  .modal-fundo,
+  .filtros,
+  .acoes,
+  .botao {
+    display: none !important;
+  }
+  .conteudo {
+    padding: 0;
+    max-width: none;
+  }
+  .somente-impressao,
+  .cabecalho-impressao,
+  .rodape-impressao {
+    display: block;
+  }
+  .cabecalho-impressao {
+    border-bottom: 2px solid #000;
+    padding-bottom: 6pt;
+    margin-bottom: 10pt;
+  }
+  .cabecalho-impressao h1 {
+    font-size: 15pt;
+    margin: 0 0 2pt;
+  }
+  .cabecalho-impressao p {
+    margin: 0;
+    font-size: 9.5pt;
+  }
+  .rodape-impressao {
+    margin-top: 24pt;
+    padding-top: 6pt;
+    border-top: 1px solid #000;
+    font-size: 9pt;
+  }
+  .rodape-impressao .assinatura {
+    margin-top: 36pt;
+    width: 60%;
+    border-top: 1px solid #000;
+    padding-top: 3pt;
+  }
+  .card,
+  .painel {
+    box-shadow: none;
+    border: 1px solid #999;
+    break-inside: auto;
+  }
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .tabela {
+    font-size: 9.5pt;
+  }
+  .tabela th,
+  .tabela td {
+    padding: 3pt 5pt;
+    border-bottom: 1px solid #bbb;
+  }
+  .tabela th {
+    background: #eee;
+    color: #000;
+  }
+  .tabela thead {
+    display: table-header-group;
+  }
+  .tabela tr {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .tabela tfoot td,
+  .tabela .tabela__total td {
+    background: #eee;
+    border-top: 2px solid #000;
+  }
+  .badge {
+    background: none;
+    color: #000;
+    border: 1px solid #000;
+    padding: 0 4pt;
+  }
+  .positivo {
+    color: #000;
+  }
+  .negativo {
+    color: #000;
+  }
+  .negativo::before {
+    content: '';
+  }
+  .secao {
+    break-inside: avoid;
+  }
+  .quebra-pagina {
+    break-before: page;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,9 @@
+# Ferramentas locais (Node portátil, artefatos de QA), dependências e saídas de build
+.tools/
+node_modules/
+dist/
+coverage/
+
+# Configurações locais do editor/agente e documento interno de passagem de bastão
+.claude/
+CONTEXTO-PARA-CODEX.md

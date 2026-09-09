@@ -1,0 +1,46 @@
+{
+  "name": "contabilidade-condominio",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/testar.mjs run",
+    "test:watch": "node scripts/testar.mjs",
+    "test:cov": "node scripts/testar.mjs run --coverage",
+    "build": "tsc --noEmit && vite build && node scripts/verificar-build.mjs",
+    "empacotar": "node scripts/empacotar.mjs",
+    "verificar": "node scripts/verificar-v2.mjs todos",
+    "capturas": "node scripts/capturar-telas.mjs",
+    "docs:pdf": "node scripts/gerar-pdf-docs.mjs"
+  },
+  "dependencies": {
+    "dexie": "4.4.5",
+    "dexie-react-hooks": "4.4.0",
+    "jszip": "3.10.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "10.4.1",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@types/node": "24.13.3",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "@vitejs/plugin-react": "6.1.1",
+    "@vitest/coverage-v8": "5.0.0",
+    "fake-indexeddb": "6.2.5",
+    "happy-dom": "20.14.0",
+    "typescript": "5.9.3",
+    "vite": "8.2.2",
+    "vite-plugin-singlefile": "2.3.3",
+    "vitest": "5.0.0"
+  }
+}

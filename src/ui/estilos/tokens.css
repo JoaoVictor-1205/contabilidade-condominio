@@ -1,0 +1,54 @@
+/* Tokens de design do sistema. Tema único (claro), pensado para tela e impressão. */
+:root {
+  --fonte: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --fonte-mono: ui-monospace, Consolas, 'Courier New', monospace;
+  --tamanho-texto: 14px;
+  --tamanho-pequeno: 12px;
+  --tamanho-titulo: 20px;
+  --tamanho-valor: 22px;
+
+  --cor-primaria: #1d4ed8;
+  --cor-primaria-escura: #1e3a8a;
+  --cor-primaria-clara: #dbeafe;
+  --cor-fundo: #f4f6fa;
+  --cor-superficie: #ffffff;
+  --cor-superficie-suave: #f8fafc;
+  --cor-borda: #e2e8f0;
+  --cor-borda-forte: #cbd5e1;
+  --cor-texto: #0f172a;
+  --cor-texto-suave: #475569;
+  --cor-texto-fraco: #94a3b8;
+
+  --cor-receita: #15803d;
+  --cor-receita-fundo: #dcfce7;
+  --cor-despesa: #b91c1c;
+  --cor-despesa-fundo: #fee2e2;
+  --cor-transferencia: #6d28d9;
+  --cor-transferencia-fundo: #ede9fe;
+  --cor-aviso: #b45309;
+  --cor-aviso-fundo: #fef3c7;
+  --cor-erro: #b91c1c;
+  --cor-erro-fundo: #fee2e2;
+  --cor-sucesso: #15803d;
+  --cor-sucesso-fundo: #dcfce7;
+  --cor-info: #1d4ed8;
+  --cor-info-fundo: #dbeafe;
+  --cor-neutra: #475569;
+  --cor-neutra-fundo: #e2e8f0;
+
+  --raio: 8px;
+  --raio-pequeno: 4px;
+  --sombra: 0 1px 3px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --sombra-modal: 0 20px 50px rgba(15, 23, 42, 0.25);
+
+  --espaco-1: 4px;
+  --espaco-2: 8px;
+  --espaco-3: 12px;
+  --espaco-4: 16px;
+  --espaco-5: 24px;
+  --espaco-6: 32px;
+
+  --largura-menu: 220px;
+  --largura-conteudo: 1200px;
+  --transicao: 120ms ease;
+}
